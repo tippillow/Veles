@@ -1,0 +1,121 @@
+.services {
+  text-align: center;
+  text-transform: uppercase;
+
+  background-color: #F1F2F5;;
+
+  &__text {
+    margin-top: 0;
+    margin-bottom: 70px;
+    padding-top: 240px;
+
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 35px;
+
+    @media screen and (max-width: 535px) {
+      padding-top: 40px;
+      margin-bottom: 40px;
+
+      font-size: 20px;
+      line-height: 23px
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    list-style: none;
+
+    @media screen and (max-width: 535px) {
+      display: block;
+    }
+  }
+
+  &__item {
+    width: 370px;
+    margin-bottom: 45px;
+
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+
+    @media screen and (max-width: 535px) {
+      width: 288px;
+      min-height: 350px;
+      margin-bottom: 35px;
+
+      font-size: 16px;
+    }
+
+    &:hover {
+      font-weight: 800;
+      transform: translateY(-20px);
+      transition: 0.2s ease-in;
+    }
+
+    &:nth-child(1), &:nth-child(6), &:nth-child(5) {
+      &::before {
+        position: absolute;
+        width: 57px;
+        height: 54px;
+
+        content: "";
+
+        background-image: url("../img/map-icon.png");
+        background-repeat: no-repeat;
+        background-position: 10px 10px;
+        background-color: #FFE500;
+      }
+    }
+
+    &:nth-child(5) {
+      &::before {
+        width: 281px;
+        height: 37px;
+
+        display: block;
+        padding-top: 17px;
+        padding-left: 35px;
+
+        content: "Смотреть карту территорий";
+
+        font-weight: normal;
+        font-size: 14px;
+
+        @media screen and (max-width: 535px) {
+          display: none;
+        }
+      }
+    }
+
+    &:nth-child(6) {
+      &::before {
+        @media screen and (max-width: 535px) {
+          display: none;
+        }
+      }
+    }
+
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.102355);
+    cursor: pointer;
+  }
+
+  &__image {
+    width: 370px;
+    height: 345px;
+
+    @media screen and (max-width: 535px) {
+      width: 288px;
+      height: 268px;
+    }
+  }
+
+  &__description {
+    padding: 0 50px;
+  }
+
+
+}

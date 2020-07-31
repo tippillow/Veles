@@ -1,0 +1,36 @@
+.form {
+  display: flex;
+  justify-content: center;
+
+  @media screen and (max-width: 535px) {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  &__input {
+    padding: 20px 0 20px 20px;
+    margin-right: 20px;
+
+    font-size: 16px;
+    line-height: 19px;
+
+    background-color: #EFF0F1;
+    border: none;
+
+    @media screen and (max-width: 535px) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__submit {
+    padding: 18px 45px;
+
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.07em;
+
+    background-color: #161616;
+  }
+}

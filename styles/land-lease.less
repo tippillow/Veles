@@ -1,0 +1,77 @@
+.land-lease {
+  margin-bottom: 70px;
+
+  @media screen and (max-width: 535px) {
+    margin-bottom: 160px;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-around;
+
+
+    @media screen and (max-width: 535px) {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+  }
+
+  &__title {
+    margin-bottom: 30px;
+
+    font-size: 30px;
+    line-height: 35px;
+    text-transform: uppercase;
+
+    @media screen and (max-width: 535px) {
+      margin-left: 100px;
+
+      font-size: 18px;
+      line-height: 21px;
+    }
+  }
+
+  &__text {
+    width: 430px;
+    margin-bottom: 40px;
+
+    font-size: 15px;
+    line-height: 18px;
+
+    @media screen and (max-width: 535px) {
+      width: 277px;
+      margin-left: 50px;
+
+      font-size: 15px;
+      line-height: 18px;
+    }
+  }
+
+  &__consultation {
+    color: #FFFFFF;
+
+    background-color: #161616;
+
+    @media screen and (max-width: 535px) {
+      font-size: 18px;
+      line-height: 21px;
+    }
+
+  }
+
+  &__image-wrapper {
+    background-color: #F1F2F5;
+  }
+
+  &__image {
+    padding-left: 30px;
+    padding-top: 30px;
+
+    @media screen and (max-width: 535px) {
+      padding: 0;
+
+      width: 318px;
+      height: 199px;
+    }
+  }
+}
