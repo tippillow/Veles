@@ -1,0 +1,66 @@
+.header {
+  font-size: 13px;
+  line-height: 15px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+
+  background-color: #161616;
+
+  @media screen and (max-width: 535px) {
+    background: url("../img/intro-image.png");
+    background-size: cover;
+  }
+
+  &__burger, &__close {
+    display: none;
+    position: absolute;
+    right: 20px;
+    top: 30px;
+
+    color: #FFFFFF;
+    font-size: 24px;
+
+    border: none;
+    background: none;
+
+    cursor: pointer;
+
+    @media screen and (max-width: 535px) {
+      display: block;
+    }
+
+  }
+
+  &__switch {
+    width: 130px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 400px;
+
+    @media screen and (max-width: 535px) {
+      margin-left: 240px;
+    }
+  }
+
+  &__next, &__previous {
+    color: #FFFFFF;
+    font-size: 24px;
+
+    border: none;
+    background: none;
+
+    cursor: pointer;
+  }
+
+}
+
+@media screen and (max-width: 535px) {
+  .close {
+    display: none;
+  }
+
+  .black {
+    background: none;
+    background-color: #161616
+  }
+}

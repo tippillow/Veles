@@ -1,0 +1,82 @@
+.intro {
+  color: white;
+  text-transform: uppercase;
+
+  background-color: #161616;
+
+  &-wrapper {
+    position: relative;
+  }
+
+  &__title {
+    width: 525px;
+    margin-top: 0;
+    margin-bottom: 50px;
+    padding-top: 140px;
+
+    font-size: 30px;
+    line-height: 32px;
+
+    @media screen and (max-width: 535px) {
+      width: 265px;
+      margin-left: 16px;
+
+      font-size: 18px;
+      line-height: 21px;
+    }
+  }
+
+  &__text {
+    width: 495px;
+    margin-bottom: 40px;
+
+    @media screen and (max-width: 535px) {
+      width: 277px;
+      margin-left: 50px;
+    }
+  }
+
+  &__order {
+    margin-bottom: 120px;
+
+    background-color: #FFE500;
+
+    @media screen and (max-width: 535px) {
+      margin-left: 16px;
+    }
+  }
+
+  &__consultation {
+    margin-bottom: 120px;
+
+    color: #FFFFFF;
+
+    background-color: #161616;
+    border: 1px solid #FFFFFF;
+
+    @media screen and (max-width: 535px) {
+      margin-left: 16px;
+    }
+  }
+
+  &__preview {
+    position: absolute;
+    right: -46px;
+    top: -390px;
+    width: 670px;
+    height: 440px;
+
+    @media screen and (max-width: 535px) {
+      right: 45px;
+      top: -900px;
+      width: 288px;
+      height: 250px;
+    }
+  }
+}
+
+@media screen and (max-width: 535px) {
+  .no-bg {
+    background: none;
+  }
+}
