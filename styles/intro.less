@@ -61,8 +61,8 @@
 
   &__preview {
     position: absolute;
-    right: -46px;
-    top: -390px;
+    right: 0;
+    top: 240px;
     width: 670px;
     height: 440px;
 
@@ -78,5 +78,17 @@
 @media screen and (max-width: 535px) {
   .no-bg {
     background: none;
+  }
+}
+
+.intro-wrapper .intro__preview {
+  top: -400px;
+  right: -46px;
+
+  @media screen and (max-width: 535px) {
+    right: 45px;
+    top: -900px;
+    width: 288px;
+    height: 250px;
   }
 }
